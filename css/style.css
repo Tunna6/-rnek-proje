@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    overflow:hidden;
+}
+
+.navbar a{
+    background: linear-gradient(#234623,#278999);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.fotograf img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.col-6:hover{
+    transform: translateY(-25px);
+}
+
+/* sohbet */
+.chat-icon{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chat-icon.opened{
+    background-color: #33cc33;
+    color: white;
+}
+
+.chat-popup{
+    display: none;
+    position: fixed;
+    bottom: 90PX;
+    right: 30px;
+    border: 1px solid #ccc;
+    z-index: 9;
+    background-color: white;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.chat-popup.show{
+    display: block;
+}
+
+.chat-header{
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+.close-btn{
+    color: white;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.chat-body{
+    padding: 20px;
+}
+
+.chat-message{
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.chat-input{
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.send-btn{
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
